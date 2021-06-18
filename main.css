@@ -1,0 +1,239 @@
+/* GENERAL */
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+html, body, h1 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', Helvetica, sans-serif;
+    /* background-color: #000; */
+    /* color: #fff; */
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: normal;
+}
+
+/* mettre une icone pour remonter tout en haut de la page */
+/* fixer la barre de menu quand on scroll */
+/* effet au survol et click sur le menu et la barre */
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 80vh;
+    background-image: url("media/devanture.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* header img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 90vh;
+} */
+
+header h1 {
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.9;
+    text-shadow: 1px 1.2px 0px orangered;
+   
+}
+
+/* NAV */
+nav {
+    padding: 15px 0 60px 0;
+}
+
+nav ul li {
+    display: inline;
+    text-align: center;
+}
+
+nav ul{
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 10px 10px 10px rgb(241, 63, 18);
+    padding: 15px 15px;
+    
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 10px 50px;
+    color: black;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(241, 63, 18);
+    /* font-weight: bold; */
+    border: 1px white solid;
+    border-radius: 30px;
+}
+
+/* SECTION PRÉSENTATION */
+#presentation {
+    /* border: 3px green solid; */
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#presentation p {
+    margin-bottom: 90px;
+    font-family: cursive, sans-serif;
+    font-size: 1.2em;
+}
+
+#presentation div {
+    /* border: 3px red solid; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 140px;
+}
+
+#presentation div img {
+    box-sizing: border-box;
+    width: 270px;
+}
+
+/* SECTION NOS PLATS */
+#nosplats {
+    margin-bottom: 50px;
+}
+
+#nosplats h2{
+    border: 1px white solid;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 5px 3px 10px rgb(241, 63, 18);
+    font-weight: bold;
+}
+
+#nosplats div{
+    /* border: 2px red solid; */
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    margin-top: 90px;
+}
+
+#nosplats img {
+    box-sizing: border-box;
+    width: 500px;
+}
+
+/* SECTION CONTACT */
+#contact  {
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+
+#contact p {
+    border: 1px white solid;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 5px 3px 10px rgb(241, 63, 18);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#contact a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* icone retour */
+#retour  {
+    display: block;
+    text-align: right;
+    margin-right: 5%;
+}
+
+#retour a {
+    text-decoration: none;
+    color: orangered;
+    font-size: 380%;
+    opacity: 0.7;
+}
+
+#retour a:hover {
+    opacity: 1;
+}
+
+
+
+/* FOOTER */
+footer span{
+    display: block;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+    header {
+        height: 30vh;
+    }
+
+    nav li a {
+        display: block;
+    }
+
+    #presentation div img {
+        box-sizing: border-box;
+        width: 300px;
+    }
+
+    .img-bottom {
+        margin-bottom: 110px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row img{
+        padding: 10px 0;
+        border-radius: 30px;
+    }
+
+    #nosplats div{
+        /* border: 2px red solid; */
+        display: flex;
+        flex-direction: column;
+    }
+    #nosplats img {
+        width: 100%;
+        margin-bottom: 3.5rem;
+        box-sizing: border-box;
+    }
+
+    #retour a {
+        font-size: 240%;
+    }
+}
+
+
