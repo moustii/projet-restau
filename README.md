@@ -1,6 +1,6 @@
 # projet-restau
 2e projet (training)
-# Faire une site vitrine sans maquette
+# Faire un site vitrine sans maquette
 *theme : peu importe
 
 *technos : html css
